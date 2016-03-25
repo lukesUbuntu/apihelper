@@ -1,0 +1,23 @@
+{
+  "name": "apihelper",
+  "version": "1.0.0",
+  "description": "a json api helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukesUbuntu/apihelper.git"
+  },
+  "keywords": [
+    "api",
+    "json"
+  ],
+  "author": "lukesubuntu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lukesUbuntu/apihelper/issues"
+  },
+  "homepage": "https://github.com/lukesUbuntu/apihelper#readme"
+}
