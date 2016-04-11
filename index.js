@@ -23,9 +23,9 @@ var api = {
             return console.dir("apihelper Can't send response, api.res not set");
 
 
-        //Issue Can't set headers after they are sent
+
         for (var header in api._headers)
-            api._res.setHeader(header, api._headers[header]);
+            api._res.set(header, api._headers[header]);
 
 
         try {
@@ -34,6 +34,7 @@ var api = {
                 'success': api.success
             });
         } catch (e) {
+            return console.dir("apihelper send error",e);
         }
 
 

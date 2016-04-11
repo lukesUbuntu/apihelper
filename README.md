@@ -26,11 +26,12 @@ api.send('hello world!',false);
 //send hello world! with custom status code 404
 api.send('hello world!',404);
 //get full express request
-api.getRequest();
+var request = api.getRequest();
 //get full express response
-api.getResponse();
+var response = api.getResponse();
 //get all parameters or get a single parameter name
-api.getVars(); or api.getVars('item_id');
+var prams = api.getVars();
+var item_id =  api.getVars('item_id');
 //add a header to the call eg. Cross-origin support
 api.headers.add("Access-Control-Allow-Origin","*");
 ```
@@ -42,9 +43,8 @@ api.headers.add("Access-Control-Allow-Origin","*");
 var app = express();
 
 app.use(api.helper);
-
 api.headers.add("Access-Control-Allow-Origin","*");
-});
+
 ```
 
 **Example Send Usage**
